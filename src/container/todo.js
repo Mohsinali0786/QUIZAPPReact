@@ -1,6 +1,6 @@
 import {useState } from "react";
 import ReactDOM from "react-dom/client";
-import {Button,TextField,LinearProgress,Rating,ButtonGroup} from '@mui/material';
+import {Button,Typography,TextField,LinearProgress,Rating,ButtonGroup} from '@mui/material';
 import Qus from '../questions.json'
 import '../App.css'
 
@@ -67,6 +67,26 @@ function QuizApp2() {
           
           <h1>Question {count+1} of 20</h1>
           <h4>Entertainment Board Games</h4>
+          {
+            data[count].difficulty==='easy'&&
+            <div>
+              <Rating name="read-only" value='2' readOnly />
+            </div>
+          }
+          {
+            data[count].difficulty==='medium'&&
+            <div>
+              <Rating name="read-only" value='2' readOnly />
+            </div>
+
+          }
+          {
+            data[count].difficulty==='hard'&&
+            <div>
+              <Rating name="read-only" value='3' readOnly />
+            </div>
+          }
+          
   
        
           <p>{data[count].question.replace(/[^a-zA-Z]/g, ' ')}</p>
