@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+.ans{
+  float: left;
+}
+
+.opt{
+  margin: 40px 80px;
+}
+
+h1{
+  color: blue;
+}
+
+.nxtq{
+  margin-left: 50%;
+}
+#p2{
+  float: right;
+}
+#pbar{
+  margin:10px 90px 10px 90px;
+}
+
+.b1{
+  width: 200px;
+  display: inline-block;
+}
